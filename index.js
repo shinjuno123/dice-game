@@ -23,6 +23,6 @@ var dice2 = document.querySelector('.dice .img2');
 var randomNumber1 = throwDice();
 var randomNumber2 = throwDice();
 
-dice1.src = `images/dice${randomNumber1}.png`;
-dice2.src = `images/dice${randomNumber2}.png`;
+dice1.setAttribute('src',`images/dice${randomNumber1}.png`);
+dice2.setAttribute('src',`images/dice${randomNumber2}.png`);
 heading.innerHTML = decideWinner(randomNumber1,randomNumber2);
